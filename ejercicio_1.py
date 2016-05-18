@@ -13,7 +13,7 @@ def main():
 	if op == 1:
 		print "###"*8
 		string = raw_input("Ingrese Cadena: ")
-		print "La Cadena Tiene: ", cadena(string)
+		print "La Cadena Tiene: ", cadena(string), "Caracteres"
 	
 	elif op == 2:
 		
@@ -27,6 +27,10 @@ def main():
 	
 	else:
 		print "Opcion No Valida."
+ 
+while True:
+	main()
+	resp = raw_input("Desea Continuar S/N: \n")
 
-
-main()
+	if resp.lower() == "n":
+		break
